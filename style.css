@@ -89,11 +89,17 @@ header{
     margin-right: 40px;
     padding-right: 10px;
     transition: transform 0.5 ease , box-shadow 0.3s ease;
-    animation: k 10s ease-in ;
+    animation: k 10s infnite ease-in ;
 }
 @keyframes k {
     0%{
-        r
+        border-radius:50% 30%/60% 30%;
+    }
+    50%{
+        border-radius:30% 50%/30% 60%;
+    }
+    100%{
+        border-radius:70% 40%/50% 20%;
     }
 }
 .photo:hover{
@@ -168,4 +174,5 @@ h3{
 }
 .h3{
     color:cornflowerblue;
+
 }
